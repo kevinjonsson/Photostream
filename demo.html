@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Fascinate+Inline" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="JS/demo.js"></script>
+</head>
+<header>
+    <h1>Photostream</h1>
+    <label for="searchInput">Search for image</label>
+    <input id="searchInput" type="text" placeholder="Search for image..">
+    <button id="searchButton"><i class="fas fa-search"></i></button><br>
+    <button id="changeButton">Switch to float</button>
+</header>
+<body>
+    <div class="loading">
+        <img src="/img/Spinner-1s-200px.svg" alt="Loading">
+    </div>
+
+    <div class="containerFlex" id="container">
+        <div id="dialog" title="Basic dialog"></div>
+    </div>
+</body>
+</html>

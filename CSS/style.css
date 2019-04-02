@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.loading{
+    height: 100%;
+    background-color: white;
+    position: relative;
+    display: none;
+}
+
+body{
+    text-align: center;
+}
+/* HEADER */
+header{
+    height: 250px;
+    text-align: center;
+    background-color: #8C0E12;
+}
+
+h1{
+  padding-top: 20px;
+  color: white;
+  font-family: 'Fascinate Inline', cursive;
+  font-size: 3em;
+}
+
+label{
+    display: none;
+}
+
+#searchInput{
+    margin-top: 30px;
+    padding: 10px 10px;
+    font-size: 16px;
+    width: 20%;
+    min-width: 200px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.fas {
+    font-size: 1.3em;
+}
+
+button{
+    padding: 10px 10px;
+    background: #E8BB0A;
+    color: black;
+    text-align: center;
+    font-size: 16px;
+    transition: 0.3s;
+    border-radius: 5px;
+    margin-top: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+button:active{
+    background-color: rgb(168, 140, 26);
+}
+
+#searchButton{
+    margin-top: 20px;
+    outline: none;
+}
+/* FLEX */
+
+.containerFlex{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+.containerFlex > .imgDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 33.33333333333%;
+    height: 250px;
+}
+
+.containerFlex > .imgDiv > img{
+    object-fit: cover;
+    object-position: top;
+    width: 300px;
+    height: 95%;
+    opacity: 0.9;
+}
+
+.containerFlex > .imgDiv > img:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+/* FLOAT */
+
+.containerFloat{
+    overflow: hidden;
+    width: 100%;
+    margin: 40px 0;
+}
+.containerFloat > .imgDiv {
+    float: left;
+    width: 100%;
+}
+
+.containerFloat > .imgDiv > img{
+    width: 300px;
+    height: 238px;
+    object-fit: cover;
+    object-position: top;
+    margin-top: 8px;
+    margin-bottom: auto;
+    opacity: 0.9;
+}
+
+.containerFloat > .imgDiv > img:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.ui-dialog{
+    text-align: left;
+}
+
+.ui-dialog > #dialog > .imgDialog{
+    width: 100%;
+    max-width: 400px;
+    min-width: 200px;
+}
+
+.ui-dialog-titlebar{
+    background-color: #8C0E12!important;
+    color: white!important;
+}
+
+/*Tablet*/
+@media screen and (min-width: 768px) {
+    .containerFloat > .imgDiv {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .containerFloat > .imgDiv {
+        width: 33.33333333333%;
+    }
+
+}
